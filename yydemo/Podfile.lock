@@ -1,0 +1,16 @@
+PODS:
+  - FlutterApi (0.1.0)
+
+DEPENDENCIES:
+  - FlutterApi (from `../yyfluttermodule`)
+
+EXTERNAL SOURCES:
+  FlutterApi:
+    :path: "../yyfluttermodule"
+
+SPEC CHECKSUMS:
+  FlutterApi: ca1e7ea38bd89acd1951cb3d6c17087261647a80
+
+PODFILE CHECKSUM: 1e6e564100f9fa794a688a3988c7a1a2b7c8c64f
+
+COCOAPODS: 1.8.4
