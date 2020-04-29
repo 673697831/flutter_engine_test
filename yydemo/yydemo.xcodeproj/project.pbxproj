@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2369B12B24580C80007BE53A /* flutter_assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2369B12A24580C80007BE53A /* flutter_assets.bundle */; };
+		2369B12E2458128C007BE53A /* _kDartVmSnapshotData.dat in Resources */ = {isa = PBXBuildFile; fileRef = 2369B12C2458128C007BE53A /* _kDartVmSnapshotData.dat */; };
+		2369B12F2458128C007BE53A /* _kDartIsolateSnapshotData.dat in Resources */ = {isa = PBXBuildFile; fileRef = 2369B12D2458128C007BE53A /* _kDartIsolateSnapshotData.dat */; };
 		69B354A42439CEA900D48F4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B354A32439CEA900D48F4F /* AppDelegate.m */; };
 		69B354A72439CEA900D48F4F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B354A62439CEA900D48F4F /* SceneDelegate.m */; };
 		69B354AA2439CEA900D48F4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B354A92439CEA900D48F4F /* ViewController.m */; };
@@ -17,7 +20,21 @@
 		FE2415D1177252C7C2B7E02D /* libPods-yydemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 492EFF4008B0F3859ADC4E43 /* libPods-yydemo.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2369B119245807AE007BE53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2369B114245807AD007BE53A /* products.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77424226AC7E641C0A076F39;
+			remoteInfo = sources;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2369B114245807AD007BE53A /* products.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = products.xcodeproj; path = ../../../../flutter_engine/engine/src/out/ios_release_unopt/products.xcodeproj; sourceTree = "<group>"; };
+		2369B12A24580C80007BE53A /* flutter_assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = flutter_assets.bundle; sourceTree = "<group>"; };
+		2369B12C2458128C007BE53A /* _kDartVmSnapshotData.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = _kDartVmSnapshotData.dat; sourceTree = "<group>"; };
+		2369B12D2458128C007BE53A /* _kDartIsolateSnapshotData.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = _kDartIsolateSnapshotData.dat; sourceTree = "<group>"; };
 		492EFF4008B0F3859ADC4E43 /* libPods-yydemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yydemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B3549F2439CEA800D48F4F /* yydemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yydemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B354A22439CEA800D48F4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2369B115245807AD007BE53A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2369B11A245807AE007BE53A /* sources */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		35E5ABEEDA13091556B80D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,9 @@
 		69B354A12439CEA800D48F4F /* yydemo */ = {
 			isa = PBXGroup;
 			children = (
+				2369B12D2458128C007BE53A /* _kDartIsolateSnapshotData.dat */,
+				2369B12C2458128C007BE53A /* _kDartVmSnapshotData.dat */,
+				2369B114245807AD007BE53A /* products.xcodeproj */,
 				69B354A22439CEA800D48F4F /* AppDelegate.h */,
 				69B354A32439CEA900D48F4F /* AppDelegate.m */,
 				69B354A52439CEA900D48F4F /* SceneDelegate.h */,
@@ -96,6 +124,7 @@
 				69B354B02439CEAD00D48F4F /* LaunchScreen.storyboard */,
 				69B354B32439CEAD00D48F4F /* Info.plist */,
 				69B354B42439CEAD00D48F4F /* main.m */,
+				2369B12A24580C80007BE53A /* flutter_assets.bundle */,
 			);
 			path = yydemo;
 			sourceTree = "<group>";
@@ -147,6 +176,12 @@
 			mainGroup = 69B354962439CEA800D48F4F;
 			productRefGroup = 69B354A02439CEA800D48F4F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2369B115245807AD007BE53A /* Products */;
+					ProjectRef = 2369B114245807AD007BE53A /* products.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				69B3549E2439CEA800D48F4F /* yydemo */,
@@ -154,13 +189,26 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		2369B11A245807AE007BE53A /* sources */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = sources;
+			remoteRef = 2369B119245807AE007BE53A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		69B3549D2439CEA800D48F4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2369B12F2458128C007BE53A /* _kDartIsolateSnapshotData.dat in Resources */,
 				69B354B22439CEAD00D48F4F /* LaunchScreen.storyboard in Resources */,
 				69B354AF2439CEAD00D48F4F /* Assets.xcassets in Resources */,
+				2369B12B24580C80007BE53A /* flutter_assets.bundle in Resources */,
+				2369B12E2458128C007BE53A /* _kDartVmSnapshotData.dat in Resources */,
 				69B354AD2439CEA900D48F4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = yyvoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = WalidProvision;

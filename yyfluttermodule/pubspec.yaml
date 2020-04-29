@@ -25,8 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_boost:
     git:
-      url: 'https://github.com/alibaba/flutter_boost.git'
-      ref: '0.1.61'
+        url: 'https://github.com/alibaba/flutter_boost.git'
+        ref: '0.1.61'
 
 dev_dependencies:
   flutter_test:
