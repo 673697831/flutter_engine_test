@@ -79,7 +79,7 @@ ninja -C out/ios_release_unopt_arm
   intptr_t length = clustered_stream->bytes_written();
   WriteByteSequence(buffer, buffer + length);
 ```
-这里是生成的是snapshot_assembly.S。`我们要做代码段和数据段分离修改的就是这个c++函数，首先改掉代码不写进snapshot_assembly.S，在另外的地方把二进制数据保存起来。后面通过修改engine的加载流程从外部加载这二进制数据，即可达到分离代码段和数据段的目的。`我们区分iOS和安卓，只对iOS的产物就行修改
+这里是生成的是snapshot_assembly.S。`我们要做代码段和数据段分离修改的就是这个c++函数，首先改掉代码不写进snapshot_assembly.S，在另外的地方把二进制数据保存起来。后面通过修改engine的加载流程从外部加载这二进制数据，即可达到分离代码段和数据段的目的。`我们区分iOS和安卓，只对iOS的产物进行修改
 ```
 #if defined(TARGET_OS_LINUX) || defined(TARGET_OS_ANDROID) ||                  \
     defined(TARGET_OS_FUCHSIA)
@@ -192,7 +192,7 @@ SymbolMapping::SymbolMapping(const uint8_t * data)
 }
 ```
 ### 为 `setting` 添加了新字段, 把值通过外部传入
-### ```[-> flutter/common/setting.cc]```
+### ```[-> flutter/common/setting.h]```
 ```
   const uint8_t* vm_snapshot_data_ptr;
 
