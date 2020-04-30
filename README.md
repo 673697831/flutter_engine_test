@@ -1,6 +1,6 @@
 # 深入理解flutter原理（二）
 ## 2 `AOT` 下包体积减少问题
-### 本文通过实践并给出 `demo` 和全部修改过的源代码，通过分离Vm数据段、Isolate数据段和flutter——asserts，介绍 `flutter` 包体积优化大概方案
+### 本文通过实践并给出 `demo` 和全部修改过的源代码，通过分离Vm数据段、Isolate数据段和flutter_asserts，介绍 `flutter` 包体积优化大概方案
 
 ![图片步骤](images/picture_1.png)
 ## 2.1 首先，你需要翻墙，最好保证整个过程中可以访问国外资源
