@@ -31,6 +31,7 @@ git checkout v1.12.13+hotfix.9
 ## 2.3 打开 `engine` 目录，检出对应版本号, `engine` 相关初始化请看 [深入理解flutter原理（一）](https://github.com/673697831/flutter_engine_share) 这篇
 
 ```
+cd src/flutter
 git checkout v1.12.13-hotfixes
 git checkout af51afceb
 ```
